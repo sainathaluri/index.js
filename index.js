@@ -2,17 +2,15 @@ let readlineSync = require('readline-sync')
 
 let score = 0
 
-var highScores = [
-  {
+var winner = {
     name: "Sainath",
     score: 5,
-  },
+  }
 
-  {
+var runner = {
     name: "Achyuth",
     score: 3,
-  },
-]
+  }
 
 let quesArr = [{
   question : 'where do i live? ',
@@ -53,3 +51,5 @@ function startGame(){
 }
 hello();
 startGame();
+console.log(winner.name + ' ' + winner.score+ ' ' + 'Winnerup') 
+console.log(runner.name + ' ' + runner.score + ' ' + 'Runnerup')
