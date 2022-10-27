@@ -37,7 +37,7 @@ function hello(){
 }
 function play(question,answer){
   let yourAns = readlineSync.question(question )
-  if(yourAns.toLowerCase() === answer.toLowerCase()){
+  if(yourAns === answer){
     score++;
     console.log('your score is' + ' ' +score)
   }else{
